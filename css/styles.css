@@ -130,6 +130,7 @@ sociolicons{
     display: none;
 }
 body{
+<<<<<<< HEAD
     text-align: center;
 }
 ul{
@@ -162,3 +163,14 @@ h1{
 }
 h2{
     font-weight: bold;
+=======
+    background-color:;
+}
+.navigation {
+  background: rgba(255, 0, 0, 0.6);
+  color: #fff;
+  font-weight: lighter;
+  text-align: right !important;
+  font-size: larger;
+}
+>>>>>>> added css, html & js &
