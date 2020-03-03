@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1{
     font-weight: bolder;
 }
@@ -166,6 +167,8 @@ h2{
 =======
     background-color:;
 }
+=======
+>>>>>>> changes styles.cs & index.html
 .navigation {
   background: rgba(255, 0, 0, 0.6);
   color: #fff;
@@ -173,4 +176,29 @@ h2{
   text-align: right !important;
   font-size: larger;
 }
+<<<<<<< HEAD
 >>>>>>> added css, html & js &
+=======
+.contact{
+  text-align: center;
+}
+h1{
+  text-align: center;
+  color: skyblue;
+  margin-top: 5%;
+  font-size: 50px;
+}
+h2{
+ text-align: center;
+ color: skyblue;
+ font-size: 3S0px;
+}
+.first{
+  font-size: 50px
+  font-weight:lighter;
+  font-family: sans-serif;
+  text-align: center;
+  color: skyblue;
+
+}
+>>>>>>> changes styles.cs & index.html
