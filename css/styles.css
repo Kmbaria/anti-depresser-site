@@ -1,3 +1,16 @@
+#contact{
+   background-image: url("/images/conta.jpeg"); 
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-weight: bold;                   
+   font-size: x-large;
+   font-style: normal;
+   text-align: center;
+    
+}
+
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -42,18 +55,7 @@
     color: white;
   }
 
-
-
-/* body{
-    font-weight: 800;                   
-    font-size: x-large;
-    font-style: normal;
-    background-color:rgb(138, 127, 127);
-    text-align: center;
-    
-
-}
 h2{
     color: white;
     text-align: center;
-} */
+}
