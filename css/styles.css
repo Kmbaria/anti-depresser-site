@@ -7,3 +7,32 @@ h2{
 body{
     background-color:;
 }
+div{
+  border: 2px;
+  border-style:groove;
+  background-color: lightblue;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 50%
+  font-family: 'Oswald', sans-serif;
+}
+h2:hover{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+span{
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#hhmajor, #ulmajor, #hhpersistent, #ulpersistent, #hhmanic, #ulmanic, #hhbipolar, #ulbipolar, #hhdepressive, #uldepressive, #hhfeelperinatal, #ulfeelperinatal, #hhsignsperinatal, #ulsignsperinatal{
+  display: none;
+}
+#pseasonal, #hhseasonal, #ulseasonal, #hhfall, #ulfall, #hhspring, #ulspring, #pfall, #pspring, #hhpremenstrual, #ulpremenstrual, #hheventsituational, #uleventsituational, #hhsituational, #ulsituational{
+  display: none;
+}
+body{
+  text-align: justify;
+}
