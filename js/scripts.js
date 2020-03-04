@@ -1,12 +1,5 @@
 
-// contact message function
-function userName(submit) {
-    event.preventDefault();
-    var name = $("input#name").val();
-    var email = $("input#email").val();
-    alert("Hi " + name + " ,thank for contacting us we have recieved your message .");
-  
-  };
+
 
 // business logic
 function Contact(first, last, email,phone) {
@@ -33,6 +26,7 @@ $(document).ready(function() {
     var userPhone = $("input#phone").val();
 
     var newContact = new Contact(userFirstName, userLastName,userEmail,userPhone);
+    alert("Your are registered as therapist");
     $("ul#contlist").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
   
@@ -56,43 +50,68 @@ $(document).ready(function() {
 
 
 //business logic
-function Contact(first, last, email,phone) {
-  this.firstName = first;
-  this.lastName = last;
+function Contact2(first, last, sex, age, email, phone) {
+  this.first = first;
+  this.last = last;
+  this.sex = sex;
+  this.age = age;
   this.email = email;
   this.phone = phone;
+  
+  
 }
 
 
-Contact.prototype.finalName = function() {
-  return this.firstName + " " + this.lastName + " Email address is " + this.email + "and phone No is:" + this.phone +"click to see user contact";
+Contact2.prototype.finalName = function() {
+  return " Name is " + this.first + "" + this.last + " gender is: " + this.sex + " age in years " + this.age + " Email: " + this.email + "and phone No:" + this.phone;
 }
 
 
 // user interface logic
 $(document).ready(function() {
-  $("form#userform").submit(function(event) {
+  $("#userform").submit(function(event) {
     event.preventDefault();
 
-    var userFirstName = $("input#firstname").val();
-    var userLastName = $("input#lastname").val();
-    var userEmail = $("input#email").val();
-    var userPhone = $("input#phone").val();
+    var userFirstName2 = $("input#firstname2").val();
+    var userLastName2 = $("input#lastname2").val();
+    var userSex = $("input#sex2").val();
+    var userAge = $("input#age2").val();
+    var userEmail2 = $("input#email2").val();
+    var userPhone2 = $("input#phone2").val();
 
-    var newuserContact = new Contact(userFirstName, userLastName,userEmail,userPhone);
-    // $("ul#contlist").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
-
-  $("ol#usercontlist").append("<li><span class='contactuser'>" + newuserContact.finalName() + "</span></li>");
+    var newuserContact = new Contact2( userFirstName2,userLastName2,userSex,userAge,userEmail2,userPhone2);
+    alert("You hare been registered as a user and your details is as follows:")
+    alert(newuserContact.finalName());
   
-  $(".contactuser").last().click(function() {
-      $("#usershowcontacts").show();
 
-      $(".firstname").text(usernewContact.firstName);
-      $(".lastname").text(usernewContact.lastName);
-      $(".email").text(usernewContact.email);
-      $(".phone").text(usernewContact.phone);
-    }); 
+  // $("ol#usercontlist").append("<li><span class='contactuser'>" + newuserContact.finalName() + "</span></li>");
+  
+  // $(".contactuser").last().click(function() {
+  //     $("#usershowcontacts").show();
+
+  //     (".firstname2").text(newuserContact.first);
+  //     $(".lastname2").text(newuserContact.last);
+  //     $(".sex2").text(newuserContact.sex);
+  //     $(".age2").text(newuserContact.age);
+  //     $(".email2").text(newuserContact.email);
+  //     $(".phone2").text(newuserContact.phone);
+
+
+  //   }); 
 
 }); 
 });
+
+
+
+// contact message function
+
+function userName(submit) {
+  event.preventDefault();
+  var name = $("input#name").val();
+  var email = $("input#email").val();
+  alert("Hi " + name + " ,thank for contacting us we have recieved your message .");
+
+};
+
 
