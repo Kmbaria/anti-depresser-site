@@ -11,12 +11,6 @@
 </head>
 <body>
 
-    
-
-
-
-
-
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -26,21 +20,20 @@
                   <form id="new-contact">
                     <div class="form-group">
                       <label for="new-first-name">First name</label>
-                      <input type="text" class="form-control" id="firstname">
+                      <input type="text" class="form-control" id="firstname" required>
                     </div>
                     <div class="form-group">
                       <label for="new-last-name">Last name</label>
-                      <input type="text" class="form-control" id="lastname">
+                      <input type="text" class="form-control" id="lastname" required>
                     </div>
-          
-          
                     <div class="form-group">
-                      <label for="new-last-name">email Address</label>
-                      <input type="text" class="form-control" id="email">
-                    </div>
+                        <label for="new-last-name">email Address</label>
+                        <input type="text" class="form-control" id="email" required>
+                      </div>
+                    
                     <div class="form-group">
                       <label for="new-last-name">Phone Number</label>
-                      <input type="text" class="form-control" id="phone">
+                      <input type="text" class="form-control" id="phone" required>
                     </div>
                    
                     
@@ -70,63 +63,53 @@
                 <form id="userform">
                   <div class="form-group">
                     <label for="new-first-name">user first name</label>
-                    <input type="text" class="form-control" id="firstname">
+                    <input type="text" class="form-control" id="firstname2" required>
                   </div>
                   <div class="form-group">
                     <label for="new-last-name"> User last name</label>
-                    <input type="text" class="form-control" id="lastname">
+                    <input type="text" class="form-control" id="lastname2"required>
                   </div>
-        
+                  <div class="form-group">
+                    <label for="new-last-name">user Gender</label>
+                    <input type="text" class="form-control" id="sex2"required>
+                  </div>
+                  <div class="form-group">
+                    <label for="new-last-name">user Age</label>
+                    <input type="text" class="form-control" id="age2" required>
+                  </div>
         
                   <div class="form-group">
                     <label for="new-last-name">email Address</label>
-                    <input type="text" class="form-control" id="email">
+                    <input type="text" class="form-control" id="email2" required>
                   </div>
                   <div class="form-group">
                     <label for="new-last-name">Phone Number</label>
-                    <input type="text" class="form-control" id="phone">
+                    <input type="text" class="form-control" id="phone2" required>
                   </div>
                  
                   
                   <button type="submit" class="btn btn-primary">Submit form</button>
                 </form>
         
-                <h2>User details:</h2>
+                <!-- <h2>User details:</h2>
                 <ol id="usercontlist">
         
                 </ol>
         
                 <div id="usershowcontacts">
                   <h2>user details is as follows:</h2>
-                  <p>First name: <span class="firstname"></span></p>
-                  <p>Last name: <span class="lastname"></span></p>
-                  <p>Email Address: <span class="email"></span></p>
-                  <p>Phone Number: <span class="phone"></span></p>
+                  <p>First name: <span class="firstname2"></span></p>
+                  <p>Last name: <span class="lastname2"></span></p>
+                  <p>User gender: <span class="sex2"></span></p>
+                  <p>User age: <span class="age2"></span></p>
+                  <p>Email Address: <span class="email2"></span></p>
+                  <p>Phone Number: <span class="phone2"></span></p>
                   
         
-              </div>
+              </div> -->
             </div>
 
-
-
-
-
-
-
-
-
-
-              
             </div>  
-            
-
-
-
-
-
-            
-
-            
             
             <div class="col-md-12 ">
 
@@ -134,18 +117,18 @@
                     <div>
                         <form id="contactform">
                             <label>User Name</label><br>
-                            <input name="name" type="text" placeholder="user name" id="name"
-                                required><br>
+                            <input name="name" type="text" placeholder="user name" id="name" required><br><br>
                             <label>User Email</label><br>
-                            <input name="Email" type="text" placeholder="Email address" id="email" required><br>
+                            <input name="Email" type="text" placeholder="Email address" id="email" required>
                             <div>
                                 <textarea name="message" placeholder="Your message here..." id="" cols="50"
                                     rows="5"></textarea><br>
-                                <button type="submit" class="btn btn-primary">Submit
+                                <button type="submit" onclick="userName()" class="btn btn-primary">Submit
                                     text</button>
 
                             </div>
                         </form>
+                        
                     </div>
                 
             </div>
