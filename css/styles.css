@@ -11,7 +11,7 @@
   text-decoration: overline;
 }  
 
-#usershowcontacts {
+/* #usershowcontacts {
   display: none;
 }
 
@@ -22,7 +22,7 @@
 
 .contactuser:hover {
   text-decoration: overline;
-}  
+}   */
 
 
 
@@ -36,6 +36,7 @@
    font-size: x-large;
    font-style: normal;
    text-align: center;
+   background-color:rgb(138, 127, 127);
     
 }
 
@@ -86,7 +87,7 @@
 
 
 
-body{
+/* body{
     
     background-color:rgb(138, 127, 127);
 }
@@ -94,7 +95,7 @@ body{
 h2{
     color: white;
     text-align: center;
-}
+} */
 
 
 
