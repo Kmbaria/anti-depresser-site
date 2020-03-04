@@ -1,3 +1,19 @@
+#showcontacts {
+  display: none;
+}
+
+.contact {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.contact:hover {
+  text-decoration: overline;
+}  
+
+
+
+
 #contact{
    background-image: url("/images/conta.jpeg"); 
    background-position: center;
@@ -55,7 +71,25 @@
     color: white;
   }
 
+
+
+body{
+    
+    background-color:rgb(138, 127, 127);
+}
+
 h2{
     color: white;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
