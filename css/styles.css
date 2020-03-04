@@ -1,0 +1,30 @@
+#medication {
+    display: none;
+}
+body{
+    text-align: center;
+}
+ul{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pschco {
+    display: none;
+}
+#hospital {
+    display: none;
+}
+#lifestyle {
+    display: none;
+}
+#mindbody {
+    display: none;
+}
+#support {
+    display: none;
+}
+#survovors {
+    display: none;
+}
