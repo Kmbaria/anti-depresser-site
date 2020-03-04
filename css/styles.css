@@ -11,6 +11,19 @@
   text-decoration: overline;
 }  
 
+#usershowcontacts {
+  display: none;
+}
+
+.contactuser {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.contactuser:hover {
+  text-decoration: overline;
+}  
+
 
 
 
