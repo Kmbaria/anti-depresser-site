@@ -7,7 +7,7 @@ div{
   width: 50%
   font-family: 'Oswald', sans-serif;
 }
-h2:hover{
+h3:hover{
   color: blue;
   text-decoration: underline;
   cursor: pointer;
@@ -26,4 +26,13 @@ span{
 }
 body{
   text-align: justify;
+}
+h1{
+    font-weight: bolder;
+}
+h2{
+    font-weight: bold;
+}
+body{
+    background-color:;
 }

@@ -1,13 +1,13 @@
 $(document).ready(function(){
-  $("h2#hmajor").click(function(){
+  $("h3#hmajor").click(function(){
     $("#ulmajor").toggle();
     $("#hhmajor").toggle();
   })
-  $("h2#hpersistent").click(function(){
+  $("h3#hpersistent").click(function(){
     $("#ulpersistent").toggle();
     $("#hhpersistent").toggle();
   })
-  $("h2#hmanic").click(function(){
+  $("h3#hmanic").click(function(){
     $("#hhmanic").toggle();
     $("#hhbipolar").toggle();
   })
@@ -31,7 +31,7 @@ $(document).ready(function(){
   $("#spsignsperinatal").click(function(){
     $("#ulsignsperinatal").toggle();
   })
-  $("h2#hseasonal").click(function(){
+  $("h3#hseasonal").click(function(){
     $("#hhseasonal").toggle();
     $("#hhfall").toggle();
     $("#pfall").toggle();
@@ -45,11 +45,11 @@ $(document).ready(function(){
   $("#spspring").click(function(){
     $("#ulspring").toggle();
   })
-  $("h2#hpremenstrual").click(function(){
+  $("h3#hpremenstrual").click(function(){
     $("#ulpremenstrual").toggle();
     $("#hhpremenstrual").toggle();
   })
-  $("h2#hsituational").click(function(){
+  $("h3#hsituational").click(function(){
     $("#hheventsituational").toggle();
     $("#hhsituational").toggle();
   })
