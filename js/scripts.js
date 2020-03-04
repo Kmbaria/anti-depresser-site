@@ -14,9 +14,6 @@ function Contact(first, last, email,phone) {
   this.lastName = last;
   this.email = email;
   this.phone = phone;
-
-
-
 }
 
 
@@ -38,8 +35,6 @@ $(document).ready(function() {
     var newContact = new Contact(userFirstName, userLastName,userEmail,userPhone);
     $("ul#contlist").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
-
-    
   
   $(".contact").last().click(function() {
       $("#showcontacts").show();
@@ -48,7 +43,56 @@ $(document).ready(function() {
       $(".lastname").text(newContact.lastName);
       $(".email").text(newContact.email);
       $(".phone").text(newContact.phone);
-    });  
-  });
+    }); 
+
 }); 
+});
+
+
+
+
+
+// user contacts
+
+
+//business logic
+function Contact(first, last, email,phone) {
+  this.firstName = first;
+  this.lastName = last;
+  this.email = email;
+  this.phone = phone;
+}
+
+
+Contact.prototype.finalName = function() {
+  return this.firstName + " " + this.lastName + " Email address is " + this.email + "and phone No is:" + this.phone +"click to see user contact";
+}
+
+
+// user interface logic
+$(document).ready(function() {
+  $("form#userform").submit(function(event) {
+    event.preventDefault();
+
+    var userFirstName = $("input#firstname").val();
+    var userLastName = $("input#lastname").val();
+    var userEmail = $("input#email").val();
+    var userPhone = $("input#phone").val();
+
+    var newuserContact = new Contact(userFirstName, userLastName,userEmail,userPhone);
+    // $("ul#contlist").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
+
+  $("ol#usercontlist").append("<li><span class='contactuser'>" + newuserContact.finalName() + "</span></li>");
+  
+  $(".contactuser").last().click(function() {
+      $("#usershowcontacts").show();
+
+      $(".firstname").text(usernewContact.firstName);
+      $(".lastname").text(usernewContact.lastName);
+      $(".email").text(usernewContact.email);
+      $(".phone").text(usernewContact.phone);
+    }); 
+
+}); 
+});
 
