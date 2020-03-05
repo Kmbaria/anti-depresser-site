@@ -176,12 +176,11 @@ footer {
     font-weight: lighter;
     text-align: center !important;
     font-size: larger;
-    /* height: 40%  !important; */
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.fa-facebook {
+/* .fa-facebook {
     background: #3B5998;
     color: white;
 }
@@ -194,7 +193,7 @@ footer {
 .fa-youtube {
     background: #bb0000;
     color: white;
-}
+} */
 
 #center {
     text-align: center !important;
