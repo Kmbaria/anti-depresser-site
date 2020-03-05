@@ -1,17 +1,19 @@
 
-//therapist contact function
+//therapist register function
 
 // business logic
-function Contact(first, last, email,phone) {
+function Contact(first, last, specialization, email,phone) {
   this.firstName = first;
   this.lastName = last;
+  this.specialization = specialization;
   this.email = email;
   this.phone = phone;
+
 }
 
 
 Contact.prototype.fullName = function() {
-  return this.firstName + " " + this.lastName + " Email address is " + this.email + "and phone No is:" + this.phone +" click to see therapist contact";
+  return this.firstName + " " + this.lastName + " " + this.specialization + " Email address is " + this.email + "and phone No is:" + this.phone +" click to see our therapist details";
 }
 
 
@@ -22,11 +24,13 @@ $(document).ready(function() {
 
     var userFirstName = $("input#firstname").val();
     var userLastName = $("input#lastname").val();
+    var specialization = $("input#prof").val();
     var userEmail = $("input#email").val();
     var userPhone = $("input#phone").val();
 
-    var newContact = new Contact(userFirstName, userLastName,userEmail,userPhone);
-    alert("You Have been registered as therapist");
+    var newContact = new Contact(userFirstName, userLastName, specialization, userEmail,userPhone);
+    alert("Confirm that you are a registered and qualified " + newContact.specialization);
+    alert("You Have been registered as therapist in the field of " + newContact.specialization);
     $("ul#contlist").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
   
@@ -35,6 +39,7 @@ $(document).ready(function() {
 
       $(".firstname").text(newContact.firstName);
       $(".lastname").text(newContact.lastName);
+      $(".prof").text(newContact.specialization);
       $(".email").text(newContact.email);
       $(".phone").text(newContact.phone);
     }); 
@@ -46,7 +51,7 @@ $(document).ready(function() {
 
 
 
-// user contact function
+// user register  function
 
 //business logic
 function Contact2(first, last, sex, age, email, phone) {
@@ -62,7 +67,7 @@ function Contact2(first, last, sex, age, email, phone) {
 
 
 Contact2.prototype.finalName = function() {
-  return " Name is " + this.first + "" + this.last + " gender is: " + this.sex + " age in years " + this.age + " Email: " + this.email + " and phone No:" + this.phone;
+  return " Name is " + this.first + "" + this.last + " gender is: " + this.sex + " age in years " + this.age + " Email: " + this.email + "  and phone No:" + this.phone;
 }
 
 
@@ -80,13 +85,11 @@ $(document).ready(function() {
 
     var newuserContact = new Contact2( userFirstName2,userLastName2,userSex,userAge,userEmail2,userPhone2);
     alert("You hare been registered as a user and your details is as follows:")
-    alert(newuserContact.finalName());
+    confirm(newuserContact.finalName());
   
 
 }); 
 });
-
-
 
 // contact message function
 

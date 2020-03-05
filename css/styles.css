@@ -4,7 +4,6 @@
 
 .contact {
   cursor: pointer;
-  color: #0088cc;
 }
 
 .contact:hover {
@@ -82,5 +81,11 @@
   }
 footer{
   text-align: center;
-  background-color: darkcyan;
+  background-color: lightgrey
+}
+sociolicons{
+  padding-top: 20px;
+  padding-left: 30px;
+
+
 }
