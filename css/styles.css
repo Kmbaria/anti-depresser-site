@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1{
     font-weight: bolder;
 }
@@ -7,6 +8,8 @@ h2{
 body{
     background-color:;
 }
+=======
+>>>>>>> 11db29b2e257e5a35577b943ec7bc9ab2529c2fc
 div{
   border: 2px;
   border-style:groove;
@@ -16,7 +19,11 @@ div{
   width: 50%
   font-family: 'Oswald', sans-serif;
 }
+<<<<<<< HEAD
 h2:hover{
+=======
+h3:hover{
+>>>>>>> 11db29b2e257e5a35577b943ec7bc9ab2529c2fc
   color: blue;
   text-decoration: underline;
   cursor: pointer;
@@ -36,3 +43,15 @@ span{
 body{
   text-align: justify;
 }
+<<<<<<< HEAD
+=======
+h1{
+    font-weight: bolder;
+}
+h2{
+    font-weight: bold;
+}
+body{
+    background-color:;
+}
+>>>>>>> 11db29b2e257e5a35577b943ec7bc9ab2529c2fc
