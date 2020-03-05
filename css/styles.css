@@ -33,9 +33,132 @@ span{
 body{
   text-align: justify;
 }
+
+#showcontacts {
+  display: none;
+}
+
+.contact {
+  cursor: pointer;
+}
+
+.contact:hover {
+  text-decoration: overline;
+}  
+
+#contact{
+   background-image: url("/images/conta.jpeg"); 
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-weight: bold;                   
+   font-size: x-large;
+   font-style: normal;
+   text-align: center;
+   background-color:rgb(138, 127, 127);
+    
+}
+
+#signup{
+  background-image: url("/images/conta.jpeg"); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bold;                   
+  font-size: x-large;
+  font-style: normal;
+  text-align: center;
+  
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.5;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+footer{
+  text-align: center;
+  background-color: lightgrey
+}
+sociolicons{
+  padding-top: 20px;
+  padding-left: 30px;
+
+
+}
+
+#medication {
+    display: none;
+}
+body{
+    text-align: center;
+}
+ul{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pschco {
+    display: none;
+}
+#hospital {
+    display: none;
+}
+#lifestyle {
+    display: none;
+}
+#mindbody {
+    display: none;
+}
+#support {
+    display: none;
+}
+#survovors {
+    display: none;
+}
+
 h1{
     font-weight: bolder;
 }
 h2{
     font-weight: bold;
-}
