@@ -11,22 +11,6 @@
   text-decoration: overline;
 }  
 
-/* #usershowcontacts {
-  display: none;
-}
-
-.contactuser {
-  cursor: pointer;
-  color: #0088cc;
-}
-
-.contactuser:hover {
-  text-decoration: overline;
-}   */
-
-
-
-
 #contact{
    background-image: url("/images/conta.jpeg"); 
    background-position: center;
@@ -84,26 +68,7 @@
     background: #00aff0;
     color: white;
   }
-
-
-
-/* body{
-    
-    background-color:rgb(138, 127, 127);
+footer{
+  text-align: center;
+  background-color: gainsboro;
 }
-
-h2{
-    color: white;
-    text-align: center;
-} */
-
-
-
-
-
-
-
-
-
-
-

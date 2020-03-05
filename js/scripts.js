@@ -1,5 +1,5 @@
 
-
+//therapist contact function
 
 // business logic
 function Contact(first, last, email,phone) {
@@ -11,7 +11,7 @@ function Contact(first, last, email,phone) {
 
 
 Contact.prototype.fullName = function() {
-  return this.firstName + " " + this.lastName + " Email address is " + this.email + "and phone No is:" + this.phone +"click to see therapist contact";
+  return this.firstName + " " + this.lastName + " Email address is " + this.email + "and phone No is:" + this.phone +" click to see therapist contact";
 }
 
 
@@ -26,7 +26,7 @@ $(document).ready(function() {
     var userPhone = $("input#phone").val();
 
     var newContact = new Contact(userFirstName, userLastName,userEmail,userPhone);
-    alert("Your are registered as therapist");
+    alert("You Have been registered as therapist");
     $("ul#contlist").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
   
@@ -46,8 +46,7 @@ $(document).ready(function() {
 
 
 
-// user contacts
-
+// user contact function
 
 //business logic
 function Contact2(first, last, sex, age, email, phone) {
@@ -63,7 +62,7 @@ function Contact2(first, last, sex, age, email, phone) {
 
 
 Contact2.prototype.finalName = function() {
-  return " Name is " + this.first + "" + this.last + " gender is: " + this.sex + " age in years " + this.age + " Email: " + this.email + "and phone No:" + this.phone;
+  return " Name is " + this.first + "" + this.last + " gender is: " + this.sex + " age in years " + this.age + " Email: " + this.email + " and phone No:" + this.phone;
 }
 
 
@@ -83,21 +82,6 @@ $(document).ready(function() {
     alert("You hare been registered as a user and your details is as follows:")
     alert(newuserContact.finalName());
   
-
-  // $("ol#usercontlist").append("<li><span class='contactuser'>" + newuserContact.finalName() + "</span></li>");
-  
-  // $(".contactuser").last().click(function() {
-  //     $("#usershowcontacts").show();
-
-  //     (".firstname2").text(newuserContact.first);
-  //     $(".lastname2").text(newuserContact.last);
-  //     $(".sex2").text(newuserContact.sex);
-  //     $(".age2").text(newuserContact.age);
-  //     $(".email2").text(newuserContact.email);
-  //     $(".phone2").text(newuserContact.phone);
-
-
-  //   }); 
 
 }); 
 });
