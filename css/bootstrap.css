@@ -3371,8 +3371,6 @@ input[type="button"].btn-block {
   margin-left: 0;
 }
 
-.dropleft .dropdown-toggle::before {17, 221, 41)
-  vertical-align: 0;
 }
 
 .dropdown-menu[x-placement^="top"], .dropdown-menu[x-placement^="right"], .dropdown-menu[x-placement^="bottom"], .dropdown-menu[x-placement^="left"] {
