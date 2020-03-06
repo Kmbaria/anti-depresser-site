@@ -1,19 +1,41 @@
-
+.container-fluid{
+ padding: 0px;
+ margin: 0px;
+}
 h1{
     font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h2{
     font-weight: bold;
+    font-family: monospace;
+    font: lighter;
+    font-style: normal;
 }
-div{
+h3{
+  font-weight: lighter !important;
+  color: red !important;
+  font-size: 20px  !important;
+}
+h5{
+  color: rgba(59, 11, 59, 0.815) !important;
+  font-size: 40px  !important;
+}
+h6{
+  color: rgba(161, 6, 161, 0.897) !important;
+  font-size: 30px  !important;
+  font-weight: lighter !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+/* div{
   border: 2px;
   border-style:groove;
-  background-color: lightblue;
+   background-color: lightblue;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 50%
   font-family: 'Oswald', sans-serif;
-}
+} */
 h3:hover{
   color: blue;
   text-decoration: underline;
@@ -48,7 +70,7 @@ body{
 }  
 
 #contact{
-   background-image: url("/images/conta.jpeg"); 
+   background-image:url("../images/conta.jpeg");
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -56,12 +78,14 @@ body{
    font-size: x-large;
    font-style: normal;
    text-align: center;
-   background-color:rgb(138, 127, 127);
+  
+   
+   /* display: none; */
     
 }
 
 #signup{
-  background-image: url("/images/conta.jpeg"); 
+  background-image: url("../images/background4.jpg"); 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -163,7 +187,7 @@ h1{
 }
 h2{
     font-weight: bold;
-    background-color:;
+    
 }
 .navigation {
   background: 	rgb(0,191,255);
@@ -172,14 +196,13 @@ h2{
   text-align: right !important;
   font-size: larger;
   font-family: sans-serif;
-  margin-top: 6px;
+  margin-top: 0px;
+  
+  height:70px ;
 }
-.image{
-  float: right;
-  margin-left: 700px;
-}
-/* .scrollbar::-webkit-scrollbar-thumb {
-    background-color: ##00a7e0;
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #00a7e0;
   }
 
   .scrollbar::-webkit-scrollbar-track {
@@ -187,10 +210,10 @@ h2{
   }
 
   .scrollbar::-webkit-scrollbar-button {
-    ????;
-  } */
+  
+  } 
   .nav-item{
-    top: 22px;
+    top: 0px;
     padding: 15px;
   }
 
@@ -204,7 +227,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  /* background-color: #333; */
 }
 
 li {
@@ -220,32 +243,33 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: lightblue;
 }
 
 .active {
   background-color: #4CAF50;
 }
 .dropdown {
-    position: relative;
-    display: inline-block;
-} */
+  position: relative;
+  display: inline-block;
+}
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background: rgb(0, 191, 255);
-    color: #fff;
-    font-weight: lighter;
-    border-radius: 5px;
-    max-width: 180px;
-    padding: 20px 5px;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background: rgb(0, 191, 255);
+  color: #fff;
+  font-weight: lighter;
+  border-radius: 5px;
+  max-width: 180px;
+  padding: 20px 5px;
+  z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
+
 
 .contact {
     text-align: center;
@@ -268,7 +292,7 @@ p{
   text-align: center;
 }
 .first {
-    font-size: 50px font-weight:lighter;
+    font-size: 50px ;
     font-family: sans-serif;
     text-align: center;
     color: skyblue;
@@ -325,5 +349,7 @@ footer {
   text-align: center !important;
     margin-left:20px;
     margin-right: 20px;
-    font-style: oblique;
+    font-style: monospace;
+    color: rgba(161, 6, 161, 0.897) !important;
+  
 }
